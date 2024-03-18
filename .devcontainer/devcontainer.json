@@ -1,3 +1,22 @@
 {
-  "build": { "dockerfile": "Dockerfile" }
+  "build": { "dockerfile": "Dockerfile" },
+  "customizations": {
+    "vscode": {
+      "extensions": ["rust-lang.rust-analyzer"],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "terminal.integrated.profiles.linux": {
+          "zsh": {
+            "path": "zsh"
+          }
+        },
+        "terminal.integrated.defaultProfile.macos": "zsh",
+        "terminal.integrated.profiles.macos": {
+          "zsh": {
+            "path": "zsh"
+          }
+        }
+      }
+    }
+  }
 }
